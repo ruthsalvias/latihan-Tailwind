@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latihan Tailwind</title>
+    <title>Freelance Web Developer – Ruth Angelica</title>
 
-    <!-- Tailwind 4 -->
+    <!-- Tailwind 4 lokal -->
     <script src="tailwind.js"></script>
 
     <!-- Font Awesome untuk ikon -->
@@ -20,80 +19,109 @@
       rel="stylesheet"
     />
   </head>
-  <body
-    class="font-sans bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen"
-  >
-    <section class="py-16 bg-gray-50">
+
+  <body class="font-sans bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <!-- HERO SECTION -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-purple-700">Ruth Angelica</h1>
+        <nav class="space-x-6">
+          <a href="#services" class="text-gray-700 hover:text-purple-700">Layanan</a>
+          <a href="#about" class="text-gray-700 hover:text-purple-700">Tentang</a>
+          <a href="#contact" class="text-gray-700 hover:text-purple-700">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="text-center py-20 bg-gradient-to-br from-purple-100 to-blue-100">
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">
+        Freelance Web Developer & Designer
+      </h2>
+      <p class="text-lg text-gray-700 max-w-xl mx-auto mb-6">
+        Saya Ruth Angelica, membantu bisnis dan personal membuat website modern,
+        cepat, dan responsif dengan pengalaman pengguna yang menarik.
+      </p>
+      <a
+        href="#contact"
+        class="bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition"
+      >
+        Hubungi Saya
+      </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">
-          Tips Meningkatkan Motivasi
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Tip 1 -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4"
-            >
-              <i class="fas fa-bullseye"></i>
-            </div>
-            <h3 class="font-semibold text-lg mb-2">Tetapkan Tujuan Jelas</h3>
+        <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Layanan</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <i class="fas fa-laptop-code text-3xl text-purple-600 mb-4"></i>
+            <h4 class="font-semibold text-lg mb-2">Web Development</h4>
             <p class="text-gray-600">
-              Tentukan tujuan spesifik yang ingin Anda capai dengan deadline
-              yang jelas.
+              Pembuatan website custom, landing page, dan aplikasi web responsif.
             </p>
           </div>
-
-          <!-- Tip 2 -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4"
-            >
-              <i class="fas fa-tasks"></i>
-            </div>
-            <h3 class="font-semibold text-lg mb-2">Breakdown Tugas</h3>
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <i class="fas fa-paint-brush text-3xl text-purple-600 mb-4"></i>
+            <h4 class="font-semibold text-lg mb-2">UI/UX Design</h4>
             <p class="text-gray-600">
-              Bagi tujuan besar menjadi tugas-tugas kecil yang lebih mudah
-              dikelola.
+              Desain antarmuka modern dan user-friendly untuk pengalaman terbaik.
             </p>
           </div>
-
-          <!-- Tip 3 -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4"
-            >
-              <i class="fas fa-clock"></i>
-            </div>
-            <h3 class="font-semibold text-lg mb-2">Kelola Waktu</h3>
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <i class="fas fa-search text-3xl text-purple-600 mb-4"></i>
+            <h4 class="font-semibold text-lg mb-2">SEO Optimization</h4>
             <p class="text-gray-600">
-              Gunakan teknik manajemen waktu seperti Pomodoro untuk meningkatkan
-              fokus.
-            </p>
-          </div>
-
-          <!-- Tip 4 -->
-          <div
-            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4"
-            >
-              <i class="fas fa-heart"></i>
-            </div>
-            <h3 class="font-semibold text-lg mb-2">Self-Care</h3>
-            <p class="text-gray-600">
-              Jaga kesehatan fisik dan mental dengan istirahat yang cukup dan
-              olahraga.
+              Optimasi website agar lebih mudah ditemukan di mesin pencari.
             </p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4 text-center max-w-2xl">
+        <h3 class="text-3xl font-bold mb-6 text-gray-800">Tentang Saya</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Saya Ruth Angelica, seorang Web Developer yang berpengalaman dalam
+          membangun website dengan teknologi modern seperti Tailwind CSS,
+         
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 max-w-xl text-center">
+        <h3 class="text-3xl font-bold mb-6 text-gray-800">Kontak</h3>
+        <p class="text-gray-700 mb-8">
+          Ingin bekerja sama atau punya pertanyaan? Silakan hubungi saya melalui email atau media sosial berikut:
+        </p>
+        <div class="space-y-4">
+          <p class="text-gray-800">
+            <i class="fas fa-envelope text-purple-600 mr-2"></i>
+            <a href="mailto:ruthangelica.dev@gmail.com" class="hover:underline">
+              ruthangelica.dev@gmail.com
+            </a>
+          </p>
+          <p class="text-gray-800">
+            <i class="fas fa-phone-alt text-purple-600 mr-2"></i>
+            +62 812 3456 7890
+          </p>
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://github.com/ruthangelica" target="_blank" class="text-gray-700 hover:text-purple-600">
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ruthangelica" target="_blank" class="text-gray-700 hover:text-purple-600">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://instagram.com/ruthangelica" target="_blank" class="text-gray-700 hover:text-purple-600">
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-6 text-center text-gray-600 border-t">
+      <p>&copy; 2025 Ruth Angelica – Freelance Web Developer</p>
+    </footer>
   </body>
 </html>
